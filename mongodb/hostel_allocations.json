@@ -1,0 +1,14 @@
+[
+  {
+    "studentId": "STU003",
+    "roomId": "ROOM001",
+    "allocationDate": "2025-08-05",
+    "status": "ACTIVE"
+  },
+  {
+    "studentId": "STU002",
+    "roomId": "ROOM002",
+    "allocationDate": "2025-08-05",
+    "status": "ACTIVE"
+  }
+]

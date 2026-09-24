@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "BOOK001",
+    "isbn": "978-0132350884",
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "category": "Software Engineering",
+    "publisher": "Prentice Hall",
+    "quantity": 5,
+    "availableQuantity": 4
+  },
+  {
+    "_id": "BOOK002",
+    "isbn": "978-0262033848",
+    "title": "Introduction to Algorithms",
+    "author": "Thomas H. Cormen",
+    "category": "Computer Science",
+    "publisher": "MIT Press",
+    "quantity": 3,
+    "availableQuantity": 3
+  }
+]

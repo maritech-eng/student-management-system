@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "SUB001",
+    "subjectCode": "CS301",
+    "name": "Data Structures",
+    "departmentId": "DEPT001",
+    "courseId": "CRS001",
+    "semester": 3,
+    "credits": 4,
+    "facultyId": "FAC001"
+  },
+  {
+    "_id": "SUB002",
+    "subjectCode": "CS302",
+    "name": "Database Management Systems",
+    "departmentId": "DEPT001",
+    "courseId": "CRS001",
+    "semester": 3,
+    "credits": 4,
+    "facultyId": "FAC001"
+  },
+  {
+    "_id": "SUB003",
+    "subjectCode": "CS401",
+    "name": "Operating Systems",
+    "departmentId": "DEPT001",
+    "courseId": "CRS001",
+    "semester": 4,
+    "credits": 3,
+    "facultyId": "FAC002"
+  }
+]

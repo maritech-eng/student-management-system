@@ -1,0 +1,11 @@
+[
+  {
+    "applicantId": "STU001",
+    "applicantType": "STUDENT",
+    "fromDate": "2026-09-20",
+    "toDate": "2026-09-22",
+    "reason": "Family function",
+    "status": "PENDING",
+    "approvedBy": ""
+  }
+]

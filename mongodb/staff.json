@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "STF001",
+    "staffCode": "STF-001",
+    "name": "Anita Desai",
+    "email": "anita.desai@example.com",
+    "phone": "9876500001",
+    "gender": "Female",
+    "dob": "1985-04-12",
+    "address": "12 MG Road, City",
+    "departmentId": "DEPT001",
+    "designation": "Office Assistant",
+    "joiningDate": "2015-06-01",
+    "qualification": "B.Com"
+  }
+]

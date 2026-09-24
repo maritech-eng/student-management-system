@@ -1,0 +1,11 @@
+[
+  {
+    "bookId": "BOOK001",
+    "studentId": "STU001",
+    "issueDate": "2026-08-01",
+    "dueDate": "2026-08-15",
+    "returnDate": null,
+    "fine": 0,
+    "status": "ISSUED"
+  }
+]

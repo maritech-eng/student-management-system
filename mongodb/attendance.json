@@ -1,0 +1,42 @@
+[
+  {
+    "studentId": "STU001",
+    "subjectId": "SUB001",
+    "facultyId": "FAC001",
+    "date": "2026-08-01",
+    "semester": 3,
+    "status": "PRESENT"
+  },
+  {
+    "studentId": "STU001",
+    "subjectId": "SUB001",
+    "facultyId": "FAC001",
+    "date": "2026-08-02",
+    "semester": 3,
+    "status": "ABSENT"
+  },
+  {
+    "studentId": "STU001",
+    "subjectId": "SUB001",
+    "facultyId": "FAC001",
+    "date": "2026-08-03",
+    "semester": 3,
+    "status": "PRESENT"
+  },
+  {
+    "studentId": "STU002",
+    "subjectId": "SUB001",
+    "facultyId": "FAC001",
+    "date": "2026-08-01",
+    "semester": 3,
+    "status": "PRESENT"
+  },
+  {
+    "studentId": "STU002",
+    "subjectId": "SUB001",
+    "facultyId": "FAC001",
+    "date": "2026-08-02",
+    "semester": 3,
+    "status": "PRESENT"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "EXM001",
+    "examName": "Mid Semester Exam",
+    "subjectId": "SUB001",
+    "semester": 3,
+    "examDate": "2026-09-10",
+    "maxMarks": 50
+  },
+  {
+    "_id": "EXM002",
+    "examName": "End Semester Exam",
+    "subjectId": "SUB001",
+    "semester": 3,
+    "examDate": "2026-11-20",
+    "maxMarks": 100
+  }
+]

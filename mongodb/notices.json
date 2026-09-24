@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Mid Semester Exam Schedule Released",
+    "description": "Check the timetable page for exam dates.",
+    "date": "2026-09-01",
+    "createdBy": "admin@example.com",
+    "priority": "HIGH"
+  },
+  {
+    "title": "Library Timings Extended",
+    "description": "Library will now stay open until 8 PM on weekdays.",
+    "date": "2026-08-25",
+    "createdBy": "staff@example.com",
+    "priority": "LOW"
+  }
+]

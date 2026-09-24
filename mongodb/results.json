@@ -1,0 +1,22 @@
+[
+  {
+    "studentId": "STU001",
+    "examId": "EXM001",
+    "subjectId": "SUB001",
+    "marks": 42,
+    "maxMarks": 50,
+    "grade": "A+",
+    "gradePoint": 9,
+    "credits": 4
+  },
+  {
+    "studentId": "STU002",
+    "examId": "EXM001",
+    "subjectId": "SUB001",
+    "marks": 38,
+    "maxMarks": 50,
+    "grade": "A",
+    "gradePoint": 8,
+    "credits": 4
+  }
+]

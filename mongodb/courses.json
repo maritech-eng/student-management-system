@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "CRS001",
+    "courseCode": "B.Tech-CSE",
+    "name": "B.Tech Computer Science",
+    "departmentId": "DEPT001",
+    "duration": "4 Years",
+    "description": "Undergraduate program in Computer Science"
+  },
+  {
+    "_id": "CRS002",
+    "courseCode": "B.Tech-ECE",
+    "name": "B.Tech Electronics",
+    "departmentId": "DEPT002",
+    "duration": "4 Years",
+    "description": "Undergraduate program in Electronics"
+  }
+]

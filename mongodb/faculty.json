@@ -1,0 +1,31 @@
+[
+  {
+    "_id": "FAC001",
+    "facultyCode": "FAC-001",
+    "name": "Dr. Vikram Rao",
+    "email": "vikram.rao@example.com",
+    "phone": "9876500002",
+    "departmentId": "DEPT001",
+    "designation": "Associate Professor",
+    "qualification": "Ph.D Computer Science",
+    "joiningDate": "2012-07-15",
+    "subjectsHandled": [
+      "SUB001",
+      "SUB002"
+    ]
+  },
+  {
+    "_id": "FAC002",
+    "facultyCode": "FAC-002",
+    "name": "Dr. Meera Iyer",
+    "email": "meera.iyer@example.com",
+    "phone": "9876500003",
+    "departmentId": "DEPT001",
+    "designation": "Assistant Professor",
+    "qualification": "Ph.D Computer Science",
+    "joiningDate": "2016-01-10",
+    "subjectsHandled": [
+      "SUB003"
+    ]
+  }
+]

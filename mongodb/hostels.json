@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "HST001",
+    "name": "Boys Hostel A",
+    "block": "A"
+  },
+  {
+    "_id": "HST002",
+    "name": "Girls Hostel B",
+    "block": "B"
+  }
+]

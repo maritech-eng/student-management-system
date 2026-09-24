@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "DEPT001",
+    "departmentCode": "CSE",
+    "name": "Computer Science and Engineering",
+    "hodName": "Dr. Ramesh Kumar",
+    "description": "Department of Computer Science and Engineering"
+  },
+  {
+    "_id": "DEPT002",
+    "departmentCode": "ECE",
+    "name": "Electronics and Communication Engineering",
+    "hodName": "Dr. Priya Sharma",
+    "description": "Department of Electronics and Communication"
+  },
+  {
+    "_id": "DEPT003",
+    "departmentCode": "MECH",
+    "name": "Mechanical Engineering",
+    "hodName": "Dr. Suresh Nair",
+    "description": "Department of Mechanical Engineering"
+  }
+]

@@ -1,0 +1,131 @@
+:root {
+  --sms-primary: #4f46e5;
+  --sms-primary-dark: #3730a3;
+  --sms-sidebar-bg: #1e1b4b;
+  --sms-sidebar-width: 260px;
+}
+
+body {
+  background-color: #f4f6fb;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+/* ---------------- Sidebar ---------------- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--sms-sidebar-width);
+  background: linear-gradient(180deg, var(--sms-sidebar-bg), #12102e);
+  color: #e5e7eb;
+  overflow-y: auto;
+  z-index: 1030;
+  transition: transform 0.25s ease;
+}
+
+.sidebar .brand {
+  padding: 1.2rem 1.2rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sidebar .nav-link {
+  color: #cbd5e1;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.92rem;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border-left: 3px solid #818cf8;
+}
+
+.sidebar .nav-section-title {
+  color: #6b7280;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.9rem 1.2rem 0.3rem;
+}
+
+.sidebar .logout-link {
+  color: #fca5a5;
+}
+
+.main-content {
+  margin-left: var(--sms-sidebar-width);
+  min-height: 100vh;
+}
+
+.topbar {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  height: 56px;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar { transform: translateX(-100%); }
+  .sidebar.show { transform: translateX(0); }
+  .main-content { margin-left: 0; }
+}
+
+/* ---------------- Cards / dashboard ---------------- */
+.stat-card {
+  border: none;
+  border-radius: 0.9rem;
+  color: #fff;
+  padding: 1.25rem;
+}
+.stat-card .stat-value { font-size: 1.8rem; font-weight: 700; }
+.stat-card .stat-icon { font-size: 1.8rem; opacity: 0.85; }
+.stat-card.bg-indigo { background: linear-gradient(135deg,#6366f1,#4338ca); }
+.stat-card.bg-teal { background: linear-gradient(135deg,#14b8a6,#0f766e); }
+.stat-card.bg-orange { background: linear-gradient(135deg,#f59e0b,#b45309); }
+.stat-card.bg-pink { background: linear-gradient(135deg,#ec4899,#be185d); }
+.stat-card.bg-blue { background: linear-gradient(135deg,#3b82f6,#1d4ed8); }
+
+.card { border: none; border-radius: 0.9rem; }
+.card.shadow-sm { box-shadow: 0 1px 3px rgba(0,0,0,0.08) !important; }
+
+/* ---------------- Login page ---------------- */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e1b4b, #4338ca 60%, #6366f1);
+}
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+}
+.demo-creds {
+  font-size: 0.78rem;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+/* Role-based UI hiding: STUDENT role gets a read-only view for most
+   modules (except Leave, where they can still submit their own requests).
+   This is a UX convenience only - the backend enforces the real
+   authorization rules regardless of what the UI shows. */
+.role-student .add-btn:not(.keep-for-student),
+.role-student .edit-btn,
+.role-student .delete-btn {
+  display: none !important;
+}

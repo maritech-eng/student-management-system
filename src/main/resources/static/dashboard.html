@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard - Student Management System</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="sidebarContainer"></div>
+<div class="main-content" id="mainContent">
+  <nav class="topbar d-flex justify-content-between align-items-center px-3">
+    <button class="btn btn-sm btn-outline-secondary d-md-none" id="sidebarToggle"><i class="bi bi-list"></i></button>
+    <h5 class="mb-0"><i class="bi bi-speedometer2 me-2"></i>Dashboard</h5>
+    <div id="userBadge" class="small text-muted"></div>
+  </nav>
+
+  <div class="container-fluid py-4">
+    <div class="row g-3 mb-3">
+      <div class="col-md-3 col-6">
+        <div class="stat-card bg-indigo d-flex justify-content-between align-items-center">
+          <div><div class="stat-value" id="statStudents">-</div><div>Total Students</div></div>
+          <i class="bi bi-people stat-icon"></i>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="stat-card bg-teal d-flex justify-content-between align-items-center">
+          <div><div class="stat-value" id="statStaff">-</div><div>Total Staff</div></div>
+          <i class="bi bi-person-badge stat-icon"></i>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="stat-card bg-orange d-flex justify-content-between align-items-center">
+          <div><div class="stat-value" id="statFaculty">-</div><div>Total Faculty</div></div>
+          <i class="bi bi-mortarboard stat-icon"></i>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="stat-card bg-pink d-flex justify-content-between align-items-center">
+          <div><div class="stat-value" id="statDepartments">-</div><div>Departments</div></div>
+          <i class="bi bi-diagram-3 stat-icon"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-3 mb-3">
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h6 class="card-title"><i class="bi bi-calendar-check me-1"></i> Attendance Summary</h6>
+            <canvas id="attendanceChart" height="180"></canvas>
+            <div class="small text-muted mt-2" id="attendanceText"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h6 class="card-title"><i class="bi bi-cash-coin me-1"></i> Fees Summary</h6>
+            <canvas id="feesChart" height="180"></canvas>
+            <div class="small text-muted mt-2" id="feesText"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title"><i class="bi bi-book me-1"></i> Courses</h6>
+            <div class="stat-value text-primary" id="statCourses">-</div>
+            <div class="small text-muted">Total active courses</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title"><i class="bi bi-award me-1"></i> Results</h6>
+            <div class="stat-value text-primary" id="statResults">-</div>
+            <div class="small text-muted">Total result entries recorded</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title"><i class="bi bi-megaphone me-1"></i> Quick Links</h6>
+            <a href="notices.html" class="btn btn-sm btn-outline-primary me-1 mb-1">Notices</a>
+            <a href="leave.html" class="btn btn-sm btn-outline-primary me-1 mb-1">Leave</a>
+            <a href="timetable.html" class="btn btn-sm btn-outline-primary mb-1">Timetable</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="js/api.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

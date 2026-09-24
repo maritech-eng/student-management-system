@@ -1,0 +1,11 @@
+[
+  {
+    "_id": "BUS001",
+    "busNumber": "KA-01-1234",
+    "driverName": "Manoj Singh",
+    "driverPhone": "9123456780",
+    "route": "City Center - College",
+    "pickupPoint": "City Center",
+    "capacity": 40
+  }
+]

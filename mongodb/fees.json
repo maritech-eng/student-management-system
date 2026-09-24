@@ -1,0 +1,32 @@
+[
+  {
+    "studentId": "STU001",
+    "academicYear": "2025-26",
+    "semester": 3,
+    "tuitionFee": 50000,
+    "examFee": 2000,
+    "hostelFee": 30000,
+    "transportFee": 5000,
+    "otherFee": 1000,
+    "totalFee": 88000,
+    "paidAmount": 88000,
+    "pendingAmount": 0,
+    "paymentDate": "2026-07-15",
+    "paymentStatus": "PAID"
+  },
+  {
+    "studentId": "STU002",
+    "academicYear": "2025-26",
+    "semester": 3,
+    "tuitionFee": 50000,
+    "examFee": 2000,
+    "hostelFee": 0,
+    "transportFee": 5000,
+    "otherFee": 1000,
+    "totalFee": 58000,
+    "paidAmount": 30000,
+    "pendingAmount": 28000,
+    "paymentDate": "2026-07-10",
+    "paymentStatus": "PARTIAL"
+  }
+]
