@@ -1,6 +1,7 @@
 package com.example.studentmanagement.controller;
 
 import com.example.studentmanagement.dto.AuthResponse;
+import com.example.studentmanagement.dto.ErrorResponse;
 import com.example.studentmanagement.dto.LoginRequest;
 import com.example.studentmanagement.model.User;
 import com.example.studentmanagement.repository.UserRepository;
@@ -88,7 +89,8 @@ public class AuthController {
     @PostMapping("/register")
     public ResponseEntity<?> register(@Valid @RequestBody User newUser) {
         if (userRepository.existsByEmail(newUser.getEmail())) {
-            return ResponseEntity.status(HttpStatus.CONFLICT).body("Email already registered");
+            return ResponseEntity.status(HttpStatus.CONFLICT)
+                    .body(new ErrorResponse(409, "Conflict", "Email already registered"));
         }
         newUser.setId(null);
         newUser.setRole("STUDENT");

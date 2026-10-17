@@ -52,8 +52,12 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
   e.preventDefault();
   const errorBox = document.getElementById("regError");
   const successBox = document.getElementById("regSuccess");
+  const btn = e.target.querySelector("button[type=submit]");
   errorBox.classList.add("d-none");
   successBox.classList.add("d-none");
+  btn.disabled = true;
+  const originalBtnHtml = btn.innerHTML;
+  btn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Registering...';
 
   try {
     const payload = {
@@ -67,9 +71,20 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload)
     });
-    const data = await res.json();
+    
+    let data = {};
+    const text = await res.text();
+    if (text) {
+      try {
+        data = JSON.parse(text);
+      } catch {
+        data = { message: text };
+      }
+    }
+
     if (!res.ok) {
-      throw new Error(typeof data === "string" ? data : (data.message || "Registration failed"));
+      const errorMsg = data.message || data.error || (typeof data === "string" ? data : `Registration failed (${res.status})`);
+      throw new Error(errorMsg);
     }
     successBox.textContent = "Account created! Redirecting to login...";
     successBox.classList.remove("d-none");
@@ -77,6 +92,9 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
   } catch (err) {
     errorBox.textContent = err.message;
     errorBox.classList.remove("d-none");
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = originalBtnHtml;
   }
 });
 </script>
